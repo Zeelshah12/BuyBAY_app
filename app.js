@@ -13,7 +13,7 @@ const expressWs = require('express-ws');
 app.use(bodyParser.json({limit: '5mb'}));
 app.use(bodyParser.urlencoded({limit: '5mb', extended: true}));
 
-const mongoURL = 'mongodb+srv://webdevadmin:admin123@webgroup18.qguff.mongodb.net/BestBuy?retryWrites=true&w=majority'
+const mongoURL = 'mongodb+srv://webdevadmin:*******@webgroup18.qguff.mongodb.net/BestBuy?retryWrites=true&w=majority'
 
 //creating connection with MongoDB Atlas database
 mongoose.connect(mongoURL,{ useNewUrlParser: true},(err,db)=>{
